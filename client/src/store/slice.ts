@@ -1,20 +1,16 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit'
-import { IPhoneSlice } from './types.interface'
-import { IPhone } from '@/interface/global.interface'
+import { IProductSlice } from './types.interface'
+import { IProduct } from '@/interface/global.interface'
 
-const initialStateBasket: IPhoneSlice = {
-    products: []
-}
-
-const initialStateFavorite: IPhoneSlice = {
+const initialState: IProductSlice = {
     products: []
 }
 
 export const basketSlice = createSlice({
     name: 'basket',
-    initialState: initialStateBasket,
+    initialState,
     reducers: {
-        addToBasket: (state, action: PayloadAction<IPhone>) => {
+        addToBasket: (state, action: PayloadAction<IProduct>) => {
             state.products = [...state.products, action.payload]
         }, 
         deleteToBasket: (state, action: PayloadAction<number>) => {
@@ -25,9 +21,9 @@ export const basketSlice = createSlice({
 
 export const favoriteSlice = createSlice({
     name: 'favorite',
-    initialState: initialStateBasket,
+    initialState,
     reducers: {
-        addToFavorite: (state, action: PayloadAction<IPhone>) => {
+        addToFavorite: (state, action: PayloadAction<IProduct>) => {
             state.products = [...state.products, action.payload]
         },
         removeToFavorite: (state, action: PayloadAction<number>) => {

@@ -21,15 +21,15 @@
         }
 
         h1 {
-            font-family: 'Inter';
+            font-family: --font-inter;
             font-style: normal;
-            font-weight: 300;
+            font-weight: 100;
             font-size: 96px;
             line-height: 72px;
-            letter-spacing: -0.01em;
             color: rgba($color: #fff, $alpha: 0.3);
             margin-top: 35px;
             margin-bottom: 20px;
+            letter-spacing: -0.01em;
 
             span {
                 color: #FFFFFF;

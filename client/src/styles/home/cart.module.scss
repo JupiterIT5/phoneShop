@@ -1,0 +1,25 @@
+.cart__container {
+    width: 78%;
+    margin: 112px auto;
+    display: flex;
+    flex-direction: row;
+
+    .product__card {
+        .title {
+            font-family: --font-inter;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 24px;
+            color: #000000;
+        }
+
+        .product__container {
+            width: 536px;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    .reg_order {}
+}

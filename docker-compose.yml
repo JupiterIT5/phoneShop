@@ -16,12 +16,12 @@ services:
 
   backend:
     build:
-      context: ./backend
+      context: ./server
     networks:
       - dev:
 
   frontend:
     build:
-      context: ./frontend
+      context: ./client
     networks:
       - dev:

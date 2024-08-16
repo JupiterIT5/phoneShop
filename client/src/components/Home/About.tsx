@@ -1,3 +1,5 @@
+'use client'
+
 import { NextPage } from 'next'
 import styles from '@/styles/home/about.module.scss'
 

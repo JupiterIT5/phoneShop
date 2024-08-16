@@ -1,5 +1,5 @@
-import { IPhone } from '@/interface/global.interface'
+import { IProduct } from '@/interface/global.interface'
 
-export interface IPhoneSlice {
-    products: Array<IPhone>
+export interface IProductSlice {
+    products: Array<IProduct>
 }

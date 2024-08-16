@@ -1,0 +1,98 @@
+.productCart {
+    margin-top: 40px;
+    border-bottom: 1px solid #A3A3A3;
+    width: 100%;
+    height: auto;
+    padding: 16px 0 21px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+
+    img {
+        width: 90px;
+        height: 90px;
+    }
+
+    .text {
+        margin-left: 10px;
+        width: 191px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .name {
+            font-family: 'inter';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            color: #000000;
+        }
+
+        .article {
+            font-family: --font-inter;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            color: #000000;
+            margin-top: 15px;
+        }
+    }
+
+    .count {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 7px;
+        margin-left: 5px;
+        margin-right: 20px;
+
+        input {
+            text-align: center;
+
+            &::-webkit-outer-spin-button,
+            &::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+                margin: 0;
+            }
+
+            background-color: #fff;
+            outline: none;
+            width: 40px;
+            height: 32px;
+            border: 0.5px solid #D9D9D9;
+            border-radius: 4px;
+        }
+
+        .btn__count {
+            width: 16px;
+            height: 16px;
+        }
+    }
+
+    .price {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 32px;
+        letter-spacing: 0.03em;
+        color: #000000;
+    }
+
+    .close {
+        right: 0;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        position: absolute;
+        transition: .3s ease-out;
+
+        &:hover {
+            scale: 1.1;
+            transition: .3s ease-in;
+        }
+    }
+}

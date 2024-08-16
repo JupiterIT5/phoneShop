@@ -1,8 +1,15 @@
+import '@/styles/global.scss'
 import { Metadata } from 'next'
 import { ReactNode } from 'react'
-import '@/styles/global.scss'
 import ProviderLayout from './provider'
-import Headers from '@/components/Headers/Headers'
+import { Inter } from 'next/font/google'
+import Headers from '@/components/Headers'
+
+const inter = Inter({
+	subsets: ['latin'],
+	display: 'swap',
+	variable: '--font-inter',
+})
 
 export const metadata: Metadata = {
 	title: 'Next.js',
@@ -12,7 +19,7 @@ export const metadata: Metadata = {
 const RootLayout = ({ children }: { children: ReactNode }) => {
 	return (
 		<ProviderLayout>
-			<html lang='en'>
+			<html lang='en' className={inter.className}>
 				<body>
 					<Headers />
 					{children}
