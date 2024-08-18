@@ -23,7 +23,6 @@ const ProductCart: NextPage<IProductCart> = ({img, name, price, article}) => {
   const [plus, setPlus] = useState<boolean>(false)
   
   useMemo(() => {
-    console.log(count)
     if (count <= 1) {
       setMinus(true)
       setPlus(false)

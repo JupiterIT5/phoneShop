@@ -20,7 +20,7 @@ const Advertising: NextPage = () => {
         </div>
         <div className={[styles.advertising, styles.macbook].join(' ')}>
             <h2>Macbook <span>Air</span></h2>
-            <p>The new 15‑inch MacBook Air makes room for more of what you love with a spacious Liquid Retina display.</p>
+            <p>The new 15-inch MacBook Air makes room for more of what you love with a spacious Liquid Retina display.</p>
             <button>Shop now</button>
         </div>
     </div>

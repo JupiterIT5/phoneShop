@@ -15,6 +15,8 @@ const Cart: NextPage = () => {
           <div className={styles.title}>Shopping Cart</div>
           <div className={styles.product__container}>
             <ProductCart img={phone} name='Apple iPhone 14 Pro Max 128Gb Deep Purple' price={1399} article='#25139526913984'/>
+            <ProductCart img={watch} name='Apple iPhone 14 Pro Max 128Gb Deep Purple' price={1399} article='#25139526913984'/>
+            <ProductCart img={airpods} name='Apple iPhone 14 Pro Max 128Gb Deep Purple' price={1399} article='#25139526913984'/>
           </div>
         </div>
         <div className={styles.reg_order}></div>
