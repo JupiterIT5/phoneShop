@@ -8,7 +8,7 @@ import MacBookPro from '@/images/image/popularProduct/MacBookPro.png'
 
 const PopularProduct: NextPage= () => {
   return (
-    <div className={styles.popular__product__container}>
+    <section className={styles.popular__product__container}>
         <div className={styles.popular__product}>
             <Image src={popularProduct} alt="popular product" />
             <h2>Popular Products</h2>
@@ -33,7 +33,7 @@ const PopularProduct: NextPage= () => {
             <p>iPad combines a magnificent 10.2-inch Retina display, incredible performance, multitasking and ease of use.</p>
             <button>Shop Now</button>
         </div>
-    </div>
+    </section>
   )
 }
 

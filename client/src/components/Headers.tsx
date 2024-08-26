@@ -40,10 +40,10 @@ const Headers: FC = () => {
 						Home
 					</Link>
 					<Link
-						href='/about'
-						className={router === '/about' ? styles.nav__active : styles.nav}
+						href='/catalog'
+						className={router === '/catalog' ? styles.nav__active : styles.nav}
 					>
-						About
+						Catalog
 					</Link>
 					<Link
 						href='/contact'
@@ -115,11 +115,11 @@ const Headers: FC = () => {
 							Home
 						</Link>
 						<Link
-							href='/about'
-							className={router === '/about' ? styles.nav__active : styles.nav}
+							href='/catalog'
+							className={router === '/catalog' ? styles.nav__active : styles.nav}
 							onClick={() => setMenu(false)}
 						>
-							About
+							Catalog
 						</Link>
 						<Link
 							href='/contact'

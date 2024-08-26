@@ -1,7 +1,6 @@
 'use client'
 
 import { NextPage } from 'next'
-import Image from 'next/image'
 import styles from '@/styles/home/discountProduct.module.scss'
 import ProductCard from '../UI/ProductCard/ProductCard'
 import { getProductAllDiscount } from '@/service/product.service'
@@ -11,7 +10,7 @@ const DiscountProduct: NextPage = () => {
     const {data, isLoading} = getProductAllDiscount()
 
   return (
-    <div className={styles.discount__product}>
+    <section className={styles.discount__product}>
         <h2 className={styles.title}>Discounts up to -50%</h2>
         {
           isLoading ? 
@@ -22,7 +21,7 @@ const DiscountProduct: NextPage = () => {
             ))}
           </div>
         }
-    </div>
+    </section>
   )
 }
 

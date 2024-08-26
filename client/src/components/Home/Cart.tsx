@@ -21,7 +21,7 @@ const Cart: NextPage = () => {
   }, [])
 
   return (
-    <div className={styles.cart__container}>
+    <section className={styles.cart__container}>
         <div className={styles.product__card}>
           <div className={styles.title}>Shopping Cart</div>
           <div className={styles.product__container}>
@@ -56,7 +56,7 @@ const Cart: NextPage = () => {
           </div>
           <button className={styles.submit}>Checkout</button>
         </div>
-    </div>
+    </section>
   )
 }
 

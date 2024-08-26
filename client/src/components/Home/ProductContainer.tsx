@@ -13,7 +13,7 @@ const ProductContainer: NextPage = () => {
 
 	return (
 		<>
-			<div className={styles.product__container}>
+			<section className={styles.product__container}>
 				<ul className={styles.nav__list}>
 					<li
 						className={
@@ -56,7 +56,7 @@ const ProductContainer: NextPage = () => {
 						))}
 					</div>
 				}
-			</div>
+			</section>
 		</>
 	)
 }

@@ -5,7 +5,7 @@ import styles from '@/styles/home/advertising.module.scss'
 
 const Advertising: NextPage = () => {
   return (
-    <div className={styles.advertising__container}>
+    <section className={styles.advertising__container}>
         <div className={[styles.advertising, styles.playstation].join(' ')}>
             <h2><span>Playstation 5</span></h2>
             <p>Incredibly powerful CPUs, GPUs, and an SSD with integrated I/O will redefine your PlayStation experience.</p>
@@ -23,7 +23,7 @@ const Advertising: NextPage = () => {
             <p>The new 15‑inch MacBook Air makes room for more of what you love with a spacious Liquid Retina display.</p>
             <button>Shop now</button>
         </div>
-    </div>
+    </section>
   )
 }
 

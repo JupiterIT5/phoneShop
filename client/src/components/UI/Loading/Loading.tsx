@@ -6,7 +6,7 @@ const Loading: NextPage = () => {
 		<Circles
 			height='80'
 			width='80'
-			color='#4fa94d'
+			color='#00a8f8'
 			ariaLabel='circles-loading'
 			wrapperStyle={{}}
 			wrapperClass=''

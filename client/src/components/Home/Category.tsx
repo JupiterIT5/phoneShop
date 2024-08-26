@@ -12,7 +12,7 @@ import gaming from '@/images/icon/category/gaming.svg'
 
 const Category: NextPage = () => {
   return (
-    <div className={styles.category__container}>
+    <section className={styles.category__container}>
         <h2 className={styles.title}>Browse By Category</h2>
         <div className={styles.category__list}>
             <CategoryItem img={phone} name="Phones" />
@@ -22,7 +22,7 @@ const Category: NextPage = () => {
             <CategoryItem img={computer} name="Computers" />
             <CategoryItem img={gaming} name="Gaming" />
         </div>
-    </div>
+    </section>
   )
 }
 
