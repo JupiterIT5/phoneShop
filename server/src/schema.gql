@@ -1,0 +1,17 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type ProductDTO {
+  id: Int!
+  name: String!
+  img: String!
+  desc: String
+  price: Float
+  details: String!
+}
+
+type Query {
+  getProduct: [ProductDTO!]!
+  getProductDiscount: [ProductDTO!]!
+}

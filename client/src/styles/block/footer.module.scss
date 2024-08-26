@@ -1,0 +1,120 @@
+.footer {
+    width: 100%;
+    height: 504px;
+    background: #000;
+    padding: 104px 160px;
+
+    &__first {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .cyber {
+            width: 384px;
+
+            p {
+                font-family: 'inter';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 170.5%;
+                color: #CFCFCF;
+                margin-top: 24px;
+            }
+        }
+
+        .services,
+        .assistanceToTheBuyer {
+            width: 295px;
+
+            .title {
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 16px;
+                color: #FFFFFF;
+                margin-bottom: 8px;
+            }
+
+            .nav__list {
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+
+                .nav {
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 32px;
+                    color: #CFCFCF;
+                }
+            }
+        }
+    }
+
+    &__second {
+        margin-top: 30px;
+        
+        .icon__list {
+            display: flex;
+            flex-direction: row;
+            gap: 32px;
+            
+            li {
+                transition: .4s ease-in-out;
+
+                &:hover {
+                    scale: 1.2;
+                    transition: .4s ease-in-out;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1300px) {
+    .footer {
+        &__first {
+            .cyber {
+                margin-right: 40px;
+            }
+        }
+    }
+}
+
+@media (max-width: 937px) {
+    .footer {
+        padding: 104px 32px;
+    }
+}
+
+@media (max-width: 700px) {
+    .footer {
+        height: auto;
+        padding: 52px 32px;
+
+        &__first {
+            flex-direction: column;
+            gap: 42px;
+
+            .cyber, .assistanceToTheBuyer, .services {
+                width: 100%;
+                margin: 0;
+            }
+
+            .cyber {
+                max-width: 360px;
+                width: 100%;
+            }
+        }
+
+        &__second {
+            .icon__list {
+                margin-top: 52px;
+                width: 100%;
+            }
+        }
+    }
+}

@@ -1,0 +1,115 @@
+.product__container {
+    width: 78%;
+    margin: 50px auto;
+
+    .nav__list {
+        display: flex;
+        flex-direction: row;
+        gap: 32px;
+        margin-bottom: 32px;
+
+        .nav {
+            transition: .4s ease-in-out;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 32px;
+            color: #8B8B8B;
+            cursor: pointer;
+
+            &:hover {
+                color: #000;
+                transition: .4s ease-in-out;
+            }
+        }
+
+        .nav__active {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 32px;
+            color: #000000;
+            border-bottom: 1px solid #000;
+            transition: .4s ease-in;
+        }
+    }
+
+    .product__list {
+        display: grid;
+        grid-template-columns: 268px 268px 268px 268px;
+        gap: 16px;
+    }
+}
+
+@media (max-width: 1300px) {
+    .product__container {
+        .product__list {
+            grid-template-columns: 268px 268px 268px;
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .product__container {
+        .product__list {
+            grid-template-columns: 268px 268px;
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .product__container {
+        width: 100%;
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .product__container {
+        .product__list {
+            grid-template-columns: 230px 230px;
+        }
+    }
+}
+
+@media (max-width: 530px) {
+    .product__container {
+        .product__list {
+            grid-template-columns: 200px 200px;
+        }
+    }
+}
+
+@media (max-width: 490px) {
+    .product__container {
+        .nav__list {
+            gap: 20px;
+            .nav {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+@media (max-width: 470px) {
+    .product__container {
+        .product__list {
+            grid-template-columns: 1fr;
+            justify-content: center;
+        }
+    }
+}
+
+@media (max-width: 410px) {
+    .product__container {
+        .nav__list {
+            overflow-x: auto;
+
+            .nav {
+                line-height: 24px;
+            }
+        }
+    }
+}

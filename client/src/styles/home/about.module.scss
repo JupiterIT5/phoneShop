@@ -1,0 +1,111 @@
+.about {
+    width: 100%;
+    height: 632px;
+    background-color: #211C24;
+    background-image: url(../../images/image/about.png);
+    background-position: 90%;
+    background-size: 406px 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    padding-left: 160px;
+
+    .text {
+        h2 {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 25px;
+            color: #FFFFFF;
+            opacity: 0.4;
+        }
+
+        h1 {
+            font-family: --font-inter;
+            font-style: normal;
+            font-weight: 100;
+            font-size: 96px;
+            line-height: 72px;
+            color: rgba($color: #fff, $alpha: 0.3);
+            margin-top: 35px;
+            margin-bottom: 20px;
+            letter-spacing: -0.01em;
+
+            span {
+                color: #fff;
+            }
+        }
+
+        p {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 24px;
+            color: #919191;
+            margin-bottom: 30px;
+        }
+
+        button {
+            width: 191px;
+            height: 56px;
+            border: 1px solid #FFFFFF;
+            border-radius: 6px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            color: #FFFFFF;
+            transition: .3s ease-in-out;
+
+            &:hover {
+                scale: 1.05;
+                transition: .3s ease-in-out;
+            }
+        }
+    }
+}
+
+@media (max-width: 920px) {
+    .about {
+        padding-left: 10%;
+    }
+}
+
+@media(max-width: 800px) {
+    .about {
+        .text {
+            h2 {
+                font-size: 18px;
+            }
+
+            h1 {
+                font-size: 72px;
+                margin-top: 20px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+@media (max-width: 574px) {
+    .about {
+        padding: 0 5%;
+
+        .text {
+            h1 {
+                font-size: 48px;
+            }
+        }
+    }
+}
+
+@media (max-width: 421px) {
+    .about {
+        background-position: center;
+        background-size: 320px 100%;
+    }
+}

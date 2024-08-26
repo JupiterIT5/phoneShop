@@ -1,0 +1,37 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Product {
+  id       Int       @id @default(autoincrement())
+  name     String
+  img      String  @default("https://cdn-icons-png.flaticon.com/512/1178/1178479.png")
+  price    Float
+  discount Int
+  desc     String
+  details  String
+  Parametr Parametr?
+}
+
+model Parametr {
+  id               Int      @id @default(autoincrement())
+  screenDiagonal   Float
+  screenResolution String
+  screenRefresh    Int
+  pixelDensity     Int
+  screenType       String
+  additionally     String[]
+  CPU              String
+  numberOfCores    Int
+  mainCamera       String
+  frontCamera      Int
+  battery          Int
+  productId        Int      @unique
+  article          String
+  product          Product  @relation(fields: [productId], references: [id])
+}

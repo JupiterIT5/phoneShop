@@ -1,0 +1,43 @@
+.category {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    min-width: 135px;
+    height: 128px;
+    background: #EDEDED;
+    border-radius: 15px;
+    gap: 15px;
+    cursor: pointer;
+    transition: .4s ease-in-out;
+
+    img {
+        width: 48px;
+        height: 48px;
+    }
+
+    h3 {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: #000000;
+    }
+
+    &:hover {
+        scale: 1.1;
+        transition: .4s ease-in-out;
+    }
+}
+
+@media (max-width: 400px) {
+    .category {
+        width: 130px;
+
+        h3 {
+            font-size: 14px;
+        }
+    }
+}
