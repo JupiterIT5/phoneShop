@@ -14,6 +14,7 @@ export interface IProductAll {
 	name: string
 	price: number
 	img: string
+	category: string
 }
 
 export const getProductAll = () => {
@@ -27,6 +28,7 @@ export const getProductAll = () => {
 						name
 						price
 						img
+						category
 					}
 				}
 			`)
@@ -45,6 +47,7 @@ export const getProductAllDiscount = () => {
 						name
 						price
 						img
+						category
 					}
 				}
 			`)

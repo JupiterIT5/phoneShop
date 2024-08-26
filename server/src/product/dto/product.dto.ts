@@ -20,4 +20,7 @@ export class ProductDTO {
 
     @Field()
     details: string
+
+    @Field()
+    category: string
 }

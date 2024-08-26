@@ -9,6 +9,7 @@ type ProductDTO {
   desc: String
   price: Float
   details: String!
+  category: String!
 }
 
 type Query {

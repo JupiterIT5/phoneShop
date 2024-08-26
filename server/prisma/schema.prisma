@@ -12,9 +12,10 @@ model Product {
   name     String
   img      String  @default("https://cdn-icons-png.flaticon.com/512/1178/1178479.png")
   price    Float
-  discount Int
-  desc     String
-  details  String
+  discount Int @default(0)
+  desc     String @default("Enhanced capabilities thanks toan enlarged display of 6.7 inchesand work without rechargingthroughout the day. Incredible photosas in weak, yesand in bright lightusing the new systemwith two cameras...")
+  details  String @default("Just as a book is judged by its cover, the first thing you notice when you pick up a modern smartphone is the display. Nothing surprising, because advanced technologies allow you to practically level the display frames and cutouts for the front camera and speaker, leaving no room for bold design solutions. And how good that in such realities Apple everything is fine with displays. Both critics and mass consumers always praise the quality of the picture provided by the products of the Californian brand. And last year's 6.7-inch Retina panels, which had ProMotion, caused real admiration for many.")
+  category String
   Parametr Parametr?
 }
 
