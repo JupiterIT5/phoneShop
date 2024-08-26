@@ -110,12 +110,14 @@ const Headers: FC = () => {
 						<Link
 							href='/'
 							className={router === '/' ? styles.nav__active : styles.nav}
+							onClick={() => setMenu(false)}
 						>
 							Home
 						</Link>
 						<Link
 							href='/about'
 							className={router === '/about' ? styles.nav__active : styles.nav}
+							onClick={() => setMenu(false)}
 						>
 							About
 						</Link>
@@ -124,12 +126,14 @@ const Headers: FC = () => {
 							className={
 								router === '/contact' ? styles.nav__active : styles.nav
 							}
+							onClick={() => setMenu(false)}
 						>
 							Contact us
 						</Link>
 						<Link
 							href='/blog'
 							className={router === '/blog' ? styles.nav__active : styles.nav}
+							onClick={() => setMenu(false)}
 						>
 							Blog
 						</Link>
@@ -142,15 +146,17 @@ const Headers: FC = () => {
 					/>
                     <button className={styles.search__btn}>Search...</button>
 					<div className={styles.data__container}>
-						<div className={styles.user__data}>
-							<Image src={hearth} alt='hearth' className={styles.user__data} />
-							{countFavorite ? (
-								<div className={styles.count}>{countFavorite}</div>
-							) : (
-								''
-							)}
-						</div>
-						<div className={styles.user__data}>
+						<Link href='/favorite'>
+							<div className={styles.user__data} onClick={() => setMenu(false)}>
+								<Image src={hearth} alt='hearth' className={styles.user__data} />
+								{countFavorite ? (
+									<div className={styles.count}>{countFavorite}</div>
+								) : (
+									''
+								)}
+							</div>
+						</Link>
+						<div className={styles.user__data} onClick={() => setMenu(false)}>
 							<Image src={basket} alt='basket' className={styles.user__data} />
 							{countBasket ? (
 								<div className={styles.count}>{countBasket}</div>
@@ -158,7 +164,7 @@ const Headers: FC = () => {
 								''
 							)}
 						</div>
-						<div className={styles.user__data}>
+						<div className={styles.user__data} onClick={() => setMenu(false)}>
 							<Image src={user} alt='user' className={styles.user__data} />
 						</div>
 					</div>

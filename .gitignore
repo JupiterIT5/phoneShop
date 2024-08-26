@@ -3,3 +3,5 @@ client/.next
 server/node_modules
 server/.env
 server/dist
+.gitignore
+server/.gitignore
